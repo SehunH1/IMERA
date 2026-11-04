@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#0d1117;
+    color:#f0f6fc;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10%;
+
+    background:#161b22;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url('../assets/hero.jpg');
+
+    background-size:cover;
+}
+
+.hero h1{
+    font-size:5rem;
+}
+
+.hero h2{
+    margin-top:20px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#2383e2;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:60px 0;
+}
+
+.card{
+
+    background:#161b22;
+
+    padding:30px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+}
+
+.post{
+
+    background:#161b22;
+
+    padding:30px;
+
+    margin:20px 0;
+
+    border-radius:10px;
+}
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#161b22;
+}
