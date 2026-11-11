@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Projects</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore games and prototypes currently in development at IMERA.">
+  <title>Projects | IMERA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="devlog.html">Dev Blog</a>
-</nav>
-
-<div class="container">
-
-<h1>Projects</h1>
-
-<div class="card">
-
-<h2>Project Eclipse</h2>
-
-<p>Status: In Development</p>
-
-<p>Genre: Strategy RPG</p>
-
-<p>
-Combining exploration, strategy,
-and meaningful progression.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Project Nexus</h2>
-
-<p>Status: Prototype</p>
-
-<p>Genre: Rogue-lite</p>
-
-<p>
-Fast-paced gameplay with replayability
-and player-driven customization.
-</p>
-
-</div>
-
-</div>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <a class="brand" href="index.html" aria-label="IMERA home">
+    <span class="brand-mark">I</span><span>IMERA</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="devlog.html">Dev Blog</a>
+    <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+  <main id="main">
+<section class="page-hero"><div class="reveal"><p class="eyebrow">Our projects</p><h1>Original games built around strong player choices.</h1><p>Our projects are in active development. Visuals and details may evolve as production continues.</p></div></section>
+<section class="section project-list">
+  <article class="project-row reveal"><div class="project-image"><div class="project-visual eclipse-visual" aria-label="Abstract visual identity for Project Eclipse"><span class="visual-label">IMERA / PROJECT 01</span><div class="eclipse-orbit orbit-one"></div><div class="eclipse-orbit orbit-two"></div><div class="eclipse-core"></div><p class="visual-word">ECLIPSE</p></div><span class="pill image-pill">In Development</span></div><div class="project-info"><p class="project-number">01 / STRATEGY RPG</p><h2>Project Eclipse</h2><p>A strategy RPG focused on tactical decisions, exploration, and meaningful progression. Build a team, adapt your approach, and shape the journey through consequential choices.</p><dl><div><dt>Stage</dt><dd>Early development</dd></div><div><dt>Platform</dt><dd>To be announced</dd></div><div><dt>Release</dt><dd>To be announced</dd></div></dl></div></article>
+  <article class="project-row reverse reveal"><div class="project-image"><div class="project-visual nexus-visual" aria-label="Abstract visual identity for Project Nexus"><span class="visual-label">IMERA / PROJECT 02</span><div class="nexus-grid"></div><div class="nexus-node node-one"></div><div class="nexus-node node-two"></div><div class="nexus-node node-three"></div><div class="nexus-line line-one"></div><div class="nexus-line line-two"></div><p class="visual-word">NEXUS</p></div><span class="pill image-pill">Prototype</span></div><div class="project-info"><p class="project-number">02 / ROGUE-LITE</p><h2>Project Nexus</h2><p>A fast-paced rogue-lite concept centered on replayability, player-driven builds, and flexible customization. Currently being used to test combat and progression systems.</p><dl><div><dt>Stage</dt><dd>Prototype</dd></div><div><dt>Platform</dt><dd>To be announced</dd></div><div><dt>Release</dt><dd>To be announced</dd></div></dl></div></article>
+</section></main>
+  <footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">I</span><span>IMERA</span></a>
+    <p>Original worlds. Meaningful play.</p>
+  </div>
+  <div class="footer-links">
+    <a href="about.html">Studio</a><a href="projects.html">Projects</a><a href="devlog.html">Updates</a><a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© <span data-year></span> IMERA. All rights reserved.</p>
+</footer>
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll(".site-nav a").forEach(a => a.getAttribute("href") === "projects.html" && a.classList.add("active"));</script>
 </body>
 </html>

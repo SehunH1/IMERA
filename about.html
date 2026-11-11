@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About IMERA</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about IMERA, an independent game studio focused on original interactive experiences.">
+  <title>About | IMERA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <a class="brand" href="index.html" aria-label="IMERA home">
+    <span class="brand-mark">I</span><span>IMERA</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Primary navigation">
     <a href="index.html">Home</a>
+    <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="devlog.html">Dev Blog</a>
-</nav>
-
-<div class="container">
-
-<h1>About IMERA</h1>
-
-<h2>Who We Are</h2>
-
-<p>
-IMERA is an independent game studio focused on creating
-original interactive experiences.
-</p>
-
-<h2>Mission</h2>
-
-<p>
-To create original and engaging games that reward
-curiosity, strategy, and meaningful choices.
-</p>
-
-<h2>Vision</h2>
-
-<p>
-To become a respected independent game studio known
-for distinctive and memorable experiences.
-</p>
-
-<h2>Purpose</h2>
-
-<p>
-To create interactive entertainment that inspires
-players to explore, experiment, and connect.
-</p>
-
-</div>
-
+    <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+  <main id="main">
+<section class="page-hero"><div class="reveal"><p class="eyebrow">About IMERA</p><h1>A studio for imaginative, systems-driven games.</h1><p>IMERA is an independent game studio focused on creating original interactive experiences with depth, clarity, and lasting player value.</p></div></section>
+<section class="section split reveal"><div><p class="eyebrow">Who we are</p><h2>Independent by choice.<br>Ambitious by design.</h2></div><div><p class="lead">IMERA began as a solo development initiative built around one idea: memorable games come from a strong creative point of view and disciplined execution.</p><p>We are currently developing early-stage original projects while building the tools, visual language, and production practices that will define the studio.</p></div></section>
+<section class="section principles"><div class="section-heading reveal"><div><p class="eyebrow">Studio foundation</p><h2>Mission, vision, purpose</h2></div></div><div class="three-column reveal"><article><span>Mission</span><h3>Create games that reward curiosity, strategy, and meaningful choices.</h3></article><article><span>Vision</span><h3>Become a respected independent studio known for distinctive, memorable experiences.</h3></article><article><span>Purpose</span><h3>Build interactive entertainment that inspires players to explore, experiment, and connect.</h3></article></div></section>
+<section class="quote-block reveal"><blockquote>“Imagination Made Playable.”</blockquote><p>IMERA combines “Imagine” and “Era,” representing a new period of original ideas brought to life through play.</p></section></main>
+  <footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">I</span><span>IMERA</span></a>
+    <p>Original worlds. Meaningful play.</p>
+  </div>
+  <div class="footer-links">
+    <a href="about.html">Studio</a><a href="projects.html">Projects</a><a href="devlog.html">Updates</a><a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© <span data-year></span> IMERA. All rights reserved.</p>
+</footer>
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll(".site-nav a").forEach(a => a.getAttribute("href") === "about.html" && a.classList.add("active"));</script>
 </body>
 </html>

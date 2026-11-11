@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<title>Contact</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact IMERA for professional, publishing, or collaboration inquiries.">
+  <title>Contact | IMERA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-</nav>
-
-<div class="container">
-
-<h1>Contact IMERA</h1>
-
-<p>Email: contact@imera.games</p>
-
-<p>
-LinkedIn:
-<a href="#">
-LinkedIn Profile
-</a>
-</p>
-
-<p>
-GitHub:
-<a href="#">
-GitHub Profile
-</a>
-</p>
-
-</div>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <a class="brand" href="index.html" aria-label="IMERA home">
+    <span class="brand-mark">I</span><span>IMERA</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="devlog.html">Dev Blog</a>
+    <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+  <main id="main">
+<section class="page-hero compact"><div class="reveal"><p class="eyebrow">Contact</p><h1>Start a conversation.</h1><p>For professional inquiries, collaboration opportunities, or questions about IMERA, use the contact information below.</p></div></section>
+<section class="section contact-grid"><div class="contact-copy reveal"><h2>Professional inquiries</h2><p>IMERA is currently focused on independent development. Relevant partnership, publishing, and creative collaboration inquiries are welcome.</p><div class="contact-links"><a href="mailto:contact@imera.games"><span>Email</span><strong>contact@imera.games</strong></a><a href="#"><span>LinkedIn</span><strong>Connect with IMERA</strong></a><a href="#"><span>GitHub</span><strong>View development work</strong></a></div></div><form class="contact-form reveal" action="mailto:contact@imera.games" method="post" enctype="text/plain"><label for="name">Name</label><input id="name" name="name" type="text" required><label for="email">Email</label><input id="email" name="email" type="email" required><label for="subject">Subject</label><input id="subject" name="subject" type="text" required><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea><button class="button primary" type="submit">Send inquiry</button><small>This opens your default email application. Replace with Formspree or Netlify Forms when you want server-side form handling.</small></form></section></main>
+  <footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">I</span><span>IMERA</span></a>
+    <p>Original worlds. Meaningful play.</p>
+  </div>
+  <div class="footer-links">
+    <a href="about.html">Studio</a><a href="projects.html">Projects</a><a href="devlog.html">Updates</a><a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© <span data-year></span> IMERA. All rights reserved.</p>
+</footer>
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll(".site-nav a").forEach(a => a.getAttribute("href") === "contact.html" && a.classList.add("active"));</script>
 </body>
 </html>

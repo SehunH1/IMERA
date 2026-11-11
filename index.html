@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMERA</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IMERA is an independent game studio creating original, systems-driven experiences.">
+  <title>Home | IMERA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav>
-    <div class="logo">IMERA</div>
-
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="devlog.html">Dev Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <a class="brand" href="index.html" aria-label="IMERA home">
+    <span class="brand-mark">I</span><span>IMERA</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="devlog.html">Dev Blog</a>
+    <a class="nav-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+  <main id="main">
 <section class="hero">
-
-    <div class="hero-content">
-
-        <h1>IMERA</h1>
-
-        <p>Imagine + Era</p>
-
-        <h2>Imagination Made Playable</h2>
-
-        <a href="projects.html" class="btn">
-            View Projects
-        </a>
-
-    </div>
-
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">Independent Game Studio</p>
+    <h1>We turn imagination<br><span>into playable worlds.</span></h1>
+    <p class="hero-copy">IMERA creates original games built around exploration, strategy, and choices that matter.</p>
+    <div class="button-row"><a class="button primary" href="projects.html">Explore our projects</a><a class="button secondary" href="about.html">Meet the studio</a></div>
+  </div>
+  <div class="hero-status"><span class="status-dot"></span> Currently developing Project Eclipse</div>
 </section>
-
-<section class="featured">
-
-    <h2>Featured Project</h2>
-
-    <div class="card">
-
-        <h3>Project Eclipse</h3>
-
-        <p>
-            A strategy RPG focused on tactical decisions,
-            exploration, and meaningful progression.
-        </p>
-
-    </div>
-
+<section class="section intro reveal">
+  <div><p class="eyebrow">Our approach</p><h2>Small studio.<br>Focused experiences.</h2></div>
+  <div><p class="lead">We build games with clear creative direction, thoughtful systems, and a strong sense of discovery.</p><a class="text-link" href="about.html">How we work <span>→</span></a></div>
 </section>
-
-<footer>
-
-    <p>© 2026 IMERA</p>
-
+<section class="section featured-section">
+  <div class="section-heading reveal"><div><p class="eyebrow">Featured work</p><h2>Project Eclipse</h2></div><span class="pill">In Development</span></div>
+  <article class="project-feature reveal">
+    <div class="project-visual eclipse-visual" aria-label="Abstract visual identity for Project Eclipse">
+      <span class="visual-label">IMERA / PROJECT 01</span>
+      <div class="eclipse-orbit orbit-one"></div>
+      <div class="eclipse-orbit orbit-two"></div>
+      <div class="eclipse-core"></div>
+      <p class="visual-word">ECLIPSE</p>
+    </div>
+    <div class="project-feature-content"><p class="project-number">01 / STRATEGY RPG</p><h3>Every decision changes the journey.</h3><p>A strategy RPG that combines tactical encounters, exploration, and long-term progression in an original world.</p><a class="button primary" href="projects.html">View project</a></div>
+  </article>
+</section>
+<section class="section values-grid reveal">
+  <article><span>01</span><h3>Original by design</h3><p>Distinctive worlds and systems developed with a clear creative identity.</p></article>
+  <article><span>02</span><h3>Player-centered</h3><p>Readable mechanics, meaningful decisions, and rewarding progression.</p></article>
+  <article><span>03</span><h3>Built transparently</h3><p>Regular development notes that share the process behind the games.</p></article>
+</section>
+<section class="cta reveal"><p class="eyebrow">Follow the journey</p><h2>See what we're building next.</h2><div class="button-row"><a class="button light" href="devlog.html">Read the dev blog</a><a class="button ghost-light" href="contact.html">Contact IMERA</a></div></section></main>
+  <footer class="site-footer">
+  <div>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">I</span><span>IMERA</span></a>
+    <p>Original worlds. Meaningful play.</p>
+  </div>
+  <div class="footer-links">
+    <a href="about.html">Studio</a><a href="projects.html">Projects</a><a href="devlog.html">Updates</a><a href="contact.html">Contact</a>
+  </div>
+  <p class="copyright">© <span data-year></span> IMERA. All rights reserved.</p>
 </footer>
-
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll(".site-nav a").forEach(a => a.getAttribute("href") === "index.html" && a.classList.add("active"));</script>
 </body>
 </html>
